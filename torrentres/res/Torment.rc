@@ -1,0 +1,558 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "../source/resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "../source/resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""Torment.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TORMENT             ICON                    "Torment.ico"
+IDI_TORRENT             ICON                    "Torrent.ico"
+IDI_TRAY                ICON                    "Tray.ico"
+IDI_BALL_B              ICON                    "Ball_B.ico"
+IDI_BALL_G              ICON                    "Ball_G.ico"
+IDI_BALL_O              ICON                    "Ball_O.ico"
+IDI_BALL_R              ICON                    "Ball_R.ico"
+IDI_BALL_Y              ICON                    "Ball_Y.ico"
+IDI_PAUSE               ICON                    "Pause.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PROGRESSBAR_O       BITMAP                  "ProgressBar_O.bmp"
+IDB_PROGRESSBAR_B       BITMAP                  "ProgressBar_B.bmp"
+IDB_PROGRESSBAR_G       BITMAP                  "ProgressBar_G.bmp"
+IDB_PROGRESSBAR_R       BITMAP                  "ProgressBar_R.bmp"
+IDB_PROGRESSBAR_Y       BITMAP                  "ProgressBar_Y.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "Torment.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_LOGO                BINARY                  "Logo.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Castilian) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDR_CONTEXTMENU$(SPANISH) MENU 
+#else
+IDR_CONTEXTMENU MENU 
+#endif
+BEGIN
+    POPUP "&Torrente"
+    BEGIN
+        MENUITEM "&Detalles...",                ID_TORRENT_SHOWINFO
+        MENUITEM SEPARATOR
+        MENUITEM "&Cancelar/Finalizar",         ID_TORRENT_CANCELDOWNLOAD
+        MENUITEM SEPARATOR
+        MENUITEM "&Buscar más usuarios",        ID_TORRENT_GETNEWCLIENTLIST
+        MENUITEM "&Prioridades...",             ID_TORRENT_MODIFYFILEPRIORITIES
+
+        MENUITEM "&Pausa",                      ID_TORRENT_PAUSE
+        MENUITEM "&Retomar",                    ID_TORRENT_RESUME
+    END
+    POPUP "&Cliente"
+    BEGIN
+        MENUITEM "&Desconectar",                ID_CLIENT_DISCONNECT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDR_MAINMENU$(SPANISH) MENU 
+#else
+IDR_MAINMENU MENU 
+#endif
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Abrir torrente o URL...",    ID_FILE_OPENTORRENT
+        MENUITEM SEPARATOR
+        MENUITEM "Sa&lir",                      ID_FILE_EXIT
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "&Gráfica de ancho de banda",  ID_VIEW_BANDWIDTHMONITOR
+        MENUITEM "&Log",                        ID_VIEW_LOGWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Ver columnas...",            ID_VIEW_SELECTCOLUMNS
+        , GRAYED
+    END
+    POPUP "&Herramientas"
+    BEGIN
+        MENUITEM "&Opciones...",                ID_TOOLS_SETTINGS
+    END
+    POPUP "A&yuda"
+    BEGIN
+        MENUITEM "A&cerca de TorrenTres....",   ID_HELP_ABOUTTORMENT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDR_TORRENTMENU$(SPANISH) MENU 
+#else
+IDR_TORRENTMENU MENU 
+#endif
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Ocultar",                    ID_FILE_HIDEWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Cancelar descarga",          ID_FILE_CANCELDOWNLOAD
+        MENUITEM SEPARATOR
+        MENUITEM "&Buscar más usuarios",        ID_FILE_GETNEWCLIENTLIST
+        MENUITEM "&Prioridad de archivos...",   ID_FILE_SETFILEPRIORITIES
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "&Detalles",                   ID_VIEW_TORRENTINFO
+        MENUITEM "&Bloques",                    ID_VIEW_BLOCKMAP, CHECKED
+        MENUITEM "&Usuarios",                   ID_VIEW_CLIENTLIST
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(SPANISH) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 0,0,3,0
+ PRODUCTVERSION 0,0,3,0
+ FILEFLAGSMASK 0x1fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040a04b0"
+        BEGIN
+            VALUE "Comments", "Cliente de Bittorrent en C++ usando MFC"
+            VALUE "CompanyName", "DeepB"
+            VALUE "FileDescription", "TorrenTres"
+            VALUE "FileVersion", "0.0.3"
+            VALUE "InternalName", "TorrenTres"
+            VALUE "LegalCopyright", "© DeepB"
+            VALUE "OriginalFilename", "TorrenTres.exe"
+            VALUE "ProductName", "TorrenTres"
+            VALUE "ProductVersion", "0, 0, 3, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40a, 1200
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUT_DIALOG$(SPANISH) DIALOGEX 0, 0, 238, 71
+#else
+IDD_ABOUT_DIALOG DIALOGEX 0, 0, 238, 71
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Acerca de..."
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Fale",IDOK,180,6,50,14
+    CTEXT           "TorrentTres v.0.0.3\nCreado por: Göth^Lorien\nTorrentTres es un cliente BitTorrent.\nBasado en Torment (Jason Zimmer)\ny en el BitTorrent original (Bram Cohen)\nCODE IS GPL, ASK FOR IT IF YA WANT!",
+                    IDC_STATIC,36,6,138,54
+    ICON            IDI_TORMENT,IDC_STATIC,6,6,20,20
+    CTEXT           "Uso de Memoria: 0 Bytes",IDC_MEMUSAGE,30,58,144,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDD_CONNECTIONSETTINGS_DIALOG$(SPANISH) DIALOGEX 0, 0, 244, 250
+#else
+IDD_CONNECTIONSETTINGS_DIALOG DIALOGEX 0, 0, 244, 250
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Conexiones"
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Opciones de conexión",-1,6,6,234,129
+    LTEXT           "&Limitar velocidad de subida (KBps)",-1,12,19,109,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MAXUPLOADRATE_EDIT,130,18,40,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_MAXUPLOADRATE_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,166,18,11,12
+    CONTROL         "&Sin límite",IDC_UNLIMITEDUPLOADRATE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,178,18,54,12
+    LTEXT           "Máximo &número de subidas",-1,12,36,113,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MAXUPLOADS_EDIT,130,36,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MAXUPLOADS_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,166,36,10,12
+    LTEXT           "&Puerto de escucha",-1,12,54,113,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PORT_EDIT,130,54,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PORT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,166,54,11,12
+    LTEXT           "Número má&ximo de conexiones",-1,12,72,113,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MAXCONNECTIONS_EDIT,130,72,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MAXCONNECTIONS_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,166,72,11,12
+    CONTROL         "S&in límite",IDC_UNLIMITEDCONNECTIONS_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,178,72,42,12
+    CONTROL         "&Usar esta IP al conectar al Tracker",IDC_FORCEIP_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,130,12
+    CONTROL         "",IDC_FORCEIP_EDIT,"SysIPAddress32",WS_TABSTOP,73,108,
+                    100,13
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDD_DIALOG2$(SPANISH) DIALOGEX 0, 0, 202, 106
+#else
+IDD_DIALOG2 DIALOGEX 0, 0, 202, 106
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Columns"
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,84,50,14
+    CONTROL         "Avg Bps In",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,30,51,10
+    CONTROL         "Avg Bps Out",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,42,56,10
+    CONTROL         "Peer Seeds",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,54,52,10
+    CONTROL         "Peer Partials",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,66,56,10
+    CONTROL         "Peer Average Available",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,96,30,91,10
+    CONTROL         "Estimated Completion Time",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,96,42,101,10
+    CONTROL         "Sent",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    96,54,31,10
+    CONTROL         "Received",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,66,45,10
+    LTEXT           "Select the columns that will appear on the main torment\nwindow",
+                    IDC_STATIC,6,6,192,18
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDD_FILESETTINGS_DIALOG$(SPANISH) DIALOGEX 0, 0, 244, 250
+#else
+IDD_FILESETTINGS_DIALOG DIALOGEX 0, 0, 244, 250
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Archivos"
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Opciones",IDC_STATIC,6,6,234,109
+    CONTROL         "&Preguntar destino de descargas",IDC_ASKTOSAVE_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,19,217,12
+    CONTROL         "&Crear un directorio con el nombre de torrentes multiarchivo",
+                    IDC_CREATESUBDIRS_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,36,215,12
+    CONTROL         "&Reemplazar subrayados '_' con espacios",
+                    IDC_REMOVEUNDERSCORES_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,54,216,12
+    CONTROL         "&Directorio de descarga por defecto:",
+                    IDC_DEFAULTSAVEDIR_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,72,166,12
+    EDITTEXT        IDC_DEFAULTSAVE_EDIT,12,91,162,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Examinar...",IDC_DEFAULTSAVE_BUTTON,180,91,50,12
+    GROUPBOX        "Algoritmo de descarga",IDC_STATIC,6,121,114,54
+    CONTROL         "El &menos común primero",
+                    IDC_DOWNLOADALGORITHM_RAREST_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,133,93,10
+    CONTROL         "&Aleatorio",IDC_DOWNLOADALGORITHM_RANDOM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,12,145,45,10
+    CONTROL         "Sec&uencial",IDC_DOWNLOADALGORITHM_SEQUENTIAL_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,12,157,49,10
+    GROUPBOX        "Carga automática de torrentes al iniciar",IDC_STATIC,6,
+                    181,234,54
+    CONTROL         "Autocargar de",IDC_AUTOLOAD_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,193,81,12
+    EDITTEXT        IDC_AUTOLOAD_EDIT,96,193,78,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "E&xaminar...",IDC_AUTOLOAD_BUTTON,180,193,50,12
+    CONTROL         "&Guardar Torrentes",IDC_HISTORY_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,211,80,12
+    EDITTEXT        IDC_HISTORY_EDIT,96,211,78,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Exam&inar...",IDC_HISTORY_BUTTON,180,211,50,12
+    GROUPBOX        "Metodo de reserva de espacio",IDC_STATIC,126,121,114,54,
+                    WS_DISABLED
+    CONTROL         "Anti-&fragmentación",IDC_ALLOCATIONMETHOD_FULL,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,135,133,77,10
+    CONTROL         "&Bajo demanda",IDC_ALLOCATIONMETHOD_ONDEMAND,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,135,145,61,10
+    CONTROL         "Archivo '&sparse'",IDC_ALLOCATIONMETHOD_SPARSE,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,135,157,66,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDD_PRIORITY_DIALOG$(SPANISH) DIALOGEX 0, 0, 466, 226
+#else
+IDD_PRIORITY_DIALOG DIALOGEX 0, 0, 466, 226
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Prioridades"
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    CONTROL         "&Habilitar prioridades en este torrent",
+                    IDC_ENABLE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,
+                    6,145,10
+    DEFPUSHBUTTON   "&Aceptar",IDOK,408,6,50,14
+    PUSHBUTTON      "&Cancelar",IDCANCEL,408,24,50,14
+    PUSHBUTTON      "->",IDC_ADD,180,54,48,14
+    PUSHBUTTON      "<-",IDC_REMOVE,180,72,48,14
+    LTEXT           "Archivos:",IDC_STATIC,6,24,31,8
+    LTEXT           "Prioridades:",IDC_STATIC,234,24,39,8
+    CONTROL         "",IDC_FILELIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,6,36,168,180
+    CONTROL         "",IDC_PRIORITYLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,234,36,168,180
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(SPANISH)
+#if defined(APSTUDIO_INVOKED)
+IDD_WINDOWSETTINGS_DIALOG$(SPANISH) DIALOGEX 0, 0, 244, 250
+#else
+IDD_WINDOWSETTINGS_DIALOG DIALOGEX 0, 0, 244, 250
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ventanas"
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Comportamiento",IDC_STATIC,6,6,234,66
+    CONTROL         "&Minimizar a la barra de notificación",
+                    IDC_MINIMIZETOSYSTRAY_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,18,125,10
+    CONTROL         "M&inimizar las ventanas de estado a la barra de notificación",
+                    IDC_STATUSMINIMIZETOSYSTRAY_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,36,202,10
+    CONTROL         "&Mostrar ventana de estado al cargar",
+                    IDC_STATUSONLOAD_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,54,133,10
+    GROUPBOX        "Mapa de bloques",IDC_STATIC,6,78,234,30
+    CONTROL         "&Duplicar el tamaño del mapa de bloques",
+                    IDC_DOUBLEBLOCKMAP_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,90,142,10
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "IDD_ABOUT_DIALOG$(SPANISH)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    "IDD_CONNECTIONSETTINGS_DIALOG$(SPANISH)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    "IDD_DIALOG2$(SPANISH)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    "IDD_FILESETTINGS_DIALOG$(SPANISH)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    "IDD_PRIORITY_DIALOG$(SPANISH)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 459
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    "IDD_WINDOWSETTINGS_DIALOG$(SPANISH)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Castilian) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "Torment.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
